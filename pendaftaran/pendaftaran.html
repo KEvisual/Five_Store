@@ -1,0 +1,154 @@
+   <!--
+   Barka Tirta Rama Abdurrahman (10123365) 
+   -->
+   
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>PENDAFTARAN | FIVE STORE</title>
+             <!-- Navigasi -->
+    <nav class="navbar">
+      <table>
+          <tr>
+              <td><a href="../tampilanawal/index.html">Beranda</a></td>
+              <td><a href="../Game/game.html">Game</a></td>
+              <td><a href="../pembelian/pembelian.html">Pembelian</a></td>
+              <td><a href="../AboutUs/aboutus.html">About Us</a></td>
+          </tr>
+      </table>
+  </nav>
+            
+ 
+   <!-- Link css -->
+   <link rel="stylesheet" href="pendaftaran.css" />
+   <!-- untuk hover -->
+   <link rel="stylesheet" href="globle1.css" />
+   <!-- buat logo web -->
+   <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon" />
+
+   <style>
+        /* Gaya untuk navigasi */
+        .navbar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+
+        .navbar table {
+            border-collapse: collapse;
+        }
+
+        .navbar table td {
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .navbar table td a {
+            text-decoration: none;
+            color: #fff; /* Warna teks */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar table td a:hover {
+            color: rgb(251, 255, 0); /* Warna teks saat di-hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <table>
+            <tr>
+                <td><a href="../tampilanawal/index.html">Beranda</a></td>
+                <td><a href="../Game/game.html">Game</a></td>
+                <td><a href="../pembelian/pembelian.html">Pembelian</a></td>
+                <td><a href="../AboutUs/aboutus.html">About Us</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <section class="form">
+        <div class="form-box" id="jh">
+          <div class="form-value">
+            <form class="login-form" action="">
+              <h2>Sign Up</h2>
+              
+              <div class="input-box">
+               <ion-icon name="person-outline"></ion-icon>
+                
+                <input type="username" name="" id="" required>
+                <label for="">Username</label>
+              </div>
+              
+              
+              <div class="input-box">
+                <ion-icon name="call-outline"></ion-icon>
+                
+                <input type="phone" name="" id="" required>
+                <label for="">Phone</label>
+              </div>
+              
+                    
+              <div class="input-box">
+                
+                 <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="" id="" required>
+                <label for="">Email</label>
+              </div>
+              <div class="input-box">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                
+                <input type="password" name="" id="" required>
+                <label for="">Password</label>
+              </div>
+              <div class="forget">
+                <label>
+                  <input type="checkbox" name="" id="">Remember Me
+
+                </label>
+
+              </div>
+              <a href=""></a><button>REGISTER</button>
+              <div class="register">
+                <p> Already have an account?<a href="../login/log_in.html">Login</a></p>
+              </div>
+            </form> 
+
+      </section>
+
+
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script type="module" src="https://themeon.net/nifty/v2.9.1/icons-ionicons.esm.html"></script>
+      <script nomodule src="https://themeon.net/nifty/v2.9.1/icons-ionicons.html"></script>
+
+
+      <script>
+
+        const regLink = document.querySelector(".form .register-form .register a");
+        const form = document.querySelector(".form .form-box");
+        const regForm = document.querySelector(".form .register-form");
+        logLink.addEventListener("click", function(event) {
+        form.classList.toggle('turned')
+        regForm.classList.toggle('hidden');
+
+
+            event.preventDefault();
+            });
+
+            regLink.addEventListener("click", function(event) {
+
+            form.classList.toggle('turned')
+            regForm.classList.toggle('hidden');
+            logForm.classList.toggle('hidden');  
+
+            event.preventDefault();
+            });
+        </script>
+    </body>
+</html>

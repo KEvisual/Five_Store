@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIVE STORE</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="user.css" />
+    <!-- untuk hover -->
+    <link rel="stylesheet" href="globle6.css" />
+    <!-- buat logo web -->
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      footer {
+        background-color: #000;
+        color: #fff;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Individual footer section */
+      .footer-section {
+        flex: 1 1 30%;
+        margin: 10px;
+        min-width: 250px;
+      }
+
+      .footer-section h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      .footer-section h2 span {
+        color: #0fdce3;
+      }
+
+      .footer-section p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        color: #0fdce3;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+
+      /* Latest news items */
+      .news-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .news-item img {
+        width: 80px;
+        height: 60px;
+        object-fit: cover;
+        margin-right: 15px;
+        border-radius: 5px;
+      }
+
+      .news-item p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .news-item p a {
+        color: #0fdce3;
+        text-decoration: none;
+      }
+
+      .news-item p a:hover {
+        text-decoration: underline;
+      }
+
+      .news-item small {
+        display: block;
+        color: #aaa;
+        margin-top: 5px;
+        font-size: 12px;
+      }
+
+      .platform-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .platform-links a {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+
+      .platform-links a:hover {
+        background-color: #444;
+      }
+
+      .platform-links img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .footer-bottom {
+        background-color: #111;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .footer-bottom p {
+        margin: 0;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      .footer-bottom-links {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .footer-bottom-links li {
+        margin: 0 10px;
+      }
+
+      .footer-bottom-links a {
+        color: #0fdce3;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .footer-bottom-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="nav1 flex">
+          <div class="icons flex">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="icons flex">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+
+        <div class="main-nav flex">
+          <div class="logo">
+            <h1>
+              <a href="#">FIVE<span>STORE</span></a>
+            </h1>
+          </div>
+          <div class="navlist">
+            <ul class="flex">
+              <li>
+                <a href="../tampilanawal/index.html" class="active">Beranda</a>
+              </li>
+              <li>
+                <a href="../Game/game.html">Game</a>
+              </li>
+              <li>
+                <a href="../pembelian/pembelian.html">Pembelian</a>
+              </li>
+              <li>
+                <a href="../AboutUs/aboutus.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="headercont container flex">
+          <div class="labels flex">
+            <div class="flex">
+              <i class="fa-solid fa-laptop"></i>
+              <h3 class="flex">
+                <a href="../Game/game.html">STEAM</a>
+              </h3>
+            </div>
+            <div class="flex">
+              <i class="fa-solid fa-video"></i>
+              <h3 class="flex">
+                <a href="../Game/game.html">ACTION</a>
+              </h3>
+            </div>
+            <div class="flex">
+              <i class="fa-solid fa-book-open"></i>
+              <h3 class="flex">
+                <a href="../Game/game.html">ADVENTURE</a>
+              </h3>
+            </div>
+          </div>
+          <h1 id="header_title">WELCOME TO FIVE STORE</h1>
+
+          <div class="headbtn flex">
+            <a href="../pembelian/pembelian.html">
+              <button class="button type1" id="d_btn1">...</button></a
+            >
+            <a href="../Game/game.html">
+              <button class="button type2" id="d_btn2">...</button></a
+            >
+          </div>
+        </div>
+        <div class="dots flex">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Start -->
+    <main>
+      <div class="threebox container flex">
+        <div class="cbox">
+          <img src="../IMG/gta-5.jpg" alt="title" />
+          <div class="cboxde">
+            <h5>GTA 5</h5>
+            <h2>FIVE STORE</h2>
+            <p>
+              GTA 5 merupakan permainan laga-petualangan 2013 yang dikembangkan
+              oleh Rockstar North dan diterbitkan oleh Rockstar Games
+            </p>
+          </div>
+        </div>
+        <div class="cbox">
+          <img src="../IMG/Ark-Survival-Evolved.jpg" alt="title" />
+          <div class="cboxde">
+            <h5>ARK SURVIVAL EVOLVED</h5>
+            <h2>FIVE STORE</h2>
+            <p>
+              ARK Survival Evolved merupakan permainan survival yang
+              dikembangkan oleh Studio Wildcard
+            </p>
+          </div>
+        </div>
+        <div class="cbox">
+          <img src="../IMG/Assassin's-Creed-Revelations.png" alt="title" />
+          <div class="cboxde">
+            <h5>ASSASSIN'S CREED REVELATIONS</h5>
+            <h2>FIVE STORE</h2>
+            <p>
+              ASSASSIN'S CREED REVELATIONS sebuah permainan video
+              aksi-petualangan 2011 yang dikembangkan oleh Ubisoft Montreal dan
+              diterbitkan oleh Ubisoft.
+            </p>
+          </div>
+        </div>
+        <div class="cbox">
+          <img src="../IMG/Ghost-of-Tsushima.png" alt="title" />
+          <div class="cboxde">
+            <h5>GHOST OF TSUSHIMA</h5>
+            <h2>FIVE STORE</h2>
+            <p>
+              GHOST OF TSUSHIMA permainan video dengan genre laga-petualangan
+              dan siluman tahun 2020 yang dikembangkan oleh Sucker Punch
+              Productions dan diterbitkan oleh Sony Interactive Entertainment.
+            </p>
+          </div>
+        </div>
+        <div class="cbox">
+          <img src="../IMG/geometryDash.jpg" alt="title" />
+          <div class="cboxde">
+            <h5>GEOMETRYDASH</h5>
+            <h2>FIVE STORE</h2>
+            <p>
+              GEOMETRYDASH sebuah seri permainan video platform musik yang
+              dikembangkan oleh pengembang asal Swedia, Robert "RobTop" Topala.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="featuredgames container flex">
+        <h2>Game&nbsp;<span>Unggulan</span></h2>
+        <div class="fgamescards flex">
+          <div class="fcard">
+            <img src="../IMG/gta-5.jpg" alt="" />
+            <div class="fcarddetails">
+              <h2>GTA 5</h2>
+              <div class="teg2 flex">
+                <div class="teg flex">
+                  <i class="fa-solid fa-laptop"></i>
+                  <h3 class="flex">
+                    <a href="#">STEAM</a>
+                  </h3>
+                </div>
+                <div class="teg">
+                  <h3 class="flex">
+                    <a href="#">FIKSI</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="fhovercont">
+              <h2>GTA 5</h2>
+            </div>
+          </div>
+        </div>
+        <div class="fcard">
+          <img src="../IMG/Red-Dead-Redemption-2.jpg" alt="" />
+          <div class="fcarddetails">
+            <h2>RED DEAD REDEMPTION</h2>
+            <div class="teg2 flex">
+              <div class="teg flex">
+                <i class="fa-solid fa-laptop"></i>
+                <h3 class="flex">
+                  <a href="#">STEAM</a>
+                </h3>
+              </div>
+              <div class="teg">
+                <h3 class="flex">
+                  <a href="#">ACTION</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="fhovercont">
+            <h2>R D R 2</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Start -->
+      <!-- Footer Start -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section about-us">
+            <h2>About <span>Us</span></h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              doloribus voluptates, possimus quos dolorem animi sit nulla cumque
+              eaque ipsa.
+            </p>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <ul class="footer-links">
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">eSport</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section latest-news">
+            <h2>Latest <span>News</span></h2>
+            <div class="news-item">
+              <img
+                src="../IMG/assassin-s-creed-IV-black-flag.jpg"
+                alt="News Image"
+              />
+              <p><a href="#">About Space and World</a></p>
+            </div>
+            <div class="news-item">
+              <img
+                src="../IMG/assassin-s-creed-IV-black-flag.jpg"
+                alt="News Image"
+              />
+              <p><a href="#">About Space and World</a></p>
+            </div>
+            <div class="news-item">
+              <img
+                src="../IMG/assassin-s-creed-IV-black-flag.jpg"
+                alt="News Image"
+              />
+              <p><a href="#">About Space and World</a></p>
+            </div>
+          </div>
+          <div class="footer-section apps-platforms">
+            <h2>Apps <span>& Platforms</span></h2>
+            <div class="platform-links">
+              <a href="../pembelian/pembelian.html"
+                ><img src="../IMG/logo.png" alt="Apple Store" /> Buy now via
+                Apple Store</a
+              >
+              <a href="../pembelian/pembelian.html"
+                ><img src="../IMG/logo.png" alt="Google Play" /> Buy now via
+                Google Play</a
+              >
+              <a href="../pembelian/pembelian.html"
+                ><img src="../IMG/logo.png" alt="Steam" /> Buy now via Steam</a
+              >
+              <a href="../pembelian/pembelian.html"
+                ><img src="../IMG/logo.png" alt="Windows" /> Buy now via
+                Windows</a
+              >
+              <a href="../pembelian/pembelian.html"
+                ><img src="../IMG/logo.png" alt="Amazon" /> Buy now via
+                Amazon</a
+              >
+              <a href="../pembelian/pembelian.html"
+                ><img src="../IMG/logo.png" alt="Paypal" /> Buy now via
+                Paypal</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Five Store - All rights reserved.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="../tampilanawal/index.html">Beranda</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="../AboutUs/aboutus.html">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </main>
+    <!-- manggil js -->
+    <script src="responsive.js"></script>
+    <!-- manggil js -->
+    <script>
+      function RunToLogin() {
+        window.location.href = "../login/log_in.html";
+      }
+
+      function RunToRegister() {
+        window.location.href = "../pendaftaran/pendaftaran.html";
+      }
+    </script>
+  </body>
+</html>

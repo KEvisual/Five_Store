@@ -1,0 +1,163 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>FIVESTORE | SIGN IN</title>
+    <!--
+    Muhamad Raafi Auliya Azzakhry (10123376) 
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Frame/css/style.css">
+    <style>
+      #idButtonSubmitLogin{
+        background-color: #1f6f70; 
+        font-weight:600;
+        color: #FFF;
+      }
+      #idButtonSubmitLogin:hover{
+        background-color: #FFF; 
+        font-weight:600;
+        color: #1f6f70;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../IMG/Ark-Survival-Evolved.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        transition: background-image 1.5s ease-in-out;
+      }
+
+      .fade-bg {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 20px;
+      }
+
+      .header-container img {
+        width: 15%;
+        margin-right: 20px;
+      }
+
+      .header-container h2 {
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body class="js-fullheight fade-bg">
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center mb-4 header-container">
+            <img src="../IMG/logo.png" alt="Logo">
+            <h2 class="heading-section">FIVESTORE</h2>
+        </div>
+    </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="login-wrap p-0">
+            <form action="../Database/Auth/login.php" method="POST" class="signin-form">
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <input id="password-field" type="password" name="password" class="form-control" placeholder="Password" required>
+                <span toggle="#password-field" style="color: #b8b8b8; font-weight:800;" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+              </div>
+              <div class="form-group">
+                <button type="submit" id="idButtonSubmitLogin" class="form-control btn submit px-3" style="background-color: #1f6f70; font-weight:600;">Sign In</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="Frame/js/jquery.min.js"></script>
+  <script src="Frame/js/popper.js"></script>
+  <script src="Frame/js/bootstrap.min.js"></script>
+  <script src="Frame/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    const backgrounds = [
+      '../IMG/Ark-Survival-Evolved.jpg',
+      '../IMG/assassin-s-creed-IV-black-flag.jpg',
+      '../IMG/assassins-creed-brotherhood.webp',
+      '../IMG/Ghost-of-Tsushima.png',
+      '../IMG/godofwarragnarök.jpg',
+      '../IMG/gta-5.jpg',
+      '../IMG/Naruto-Shippudden-Ultimate-Ninja-Storm-Revolutions.jpg',
+      '../IMG/Red-Dead-Redemption-2.jpg'
+    ];
+
+    let currentIndex = 0;
+
+    function changeBackground() {
+      document.body.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+      document.body.classList.add('fade-bg');
+      currentIndex = (currentIndex + 1) % backgrounds.length;
+    }
+
+    setInterval(changeBackground, 5000);
+
+    $(document).ready(function() {
+      $('form').on('submit', function(e) {
+        e.preventDefault();
+
+        $.ajax({
+          type: 'POST',
+          url: $(this).attr('action'),
+          data: $(this).serialize(),
+          dataType: 'json',
+          success: function(response) {
+            if (response.status === 'success') {
+              Swal.fire({
+                icon: 'success',
+                title: 'Berhasil',
+                text: response.message
+              }).then(() => {
+                window.location.href = '../tampilanawal/index.html'; //bagian ini arahain ke halaman dashboard.
+              });
+            } else {
+              Swal.fire({
+                icon: 'error',
+                title: 'Gagal',
+                text: response.message
+              });
+            }
+          },
+          error: function(xhr, status, error) {
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Terjadi kesalahan: ' + error
+            });
+          }
+        });
+      });
+    });
+  </script>
+  </body>
+</html>

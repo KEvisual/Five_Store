@@ -1,0 +1,30 @@
+/* )
+    Karol Efrido Sanggam Purba(10123380) 
+    (*/
+
+:root {
+  --font-family: "Titan One", sans-serif;
+  --main-color: #f5ac46;
+  --border-color: #0b6f70;
+  --textfont-family: "Josefin Sans", sans-serif;
+  --apalah-color: #be1fd7;
+  --desk-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
